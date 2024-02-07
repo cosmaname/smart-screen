@@ -14,14 +14,14 @@ lcd_comm.Reset()
 lcd_comm.InitializeComm()  # Mandatory!
 
 lcd_comm.SetBrightness(level=90)
-# lcd_comm.SetBackplateLedColor(led_color=(255, 255, 255))  # Optional
+lcd_comm.SetBackplateLedColor(led_color=(255, 255, 255))  # Optional
 lcd_comm.SetOrientation(orientation=Orientation.PORTRAIT)  # Optional
 
 background = "res/backgrounds/mona-lisa-2.png"
 lcd_comm.DisplayBitmap(background)
 
-lcd_comm.DisplayText("sdsd sds ads dd sdsd\nadsdsdsd\ndfsdfdef", x=5, y=150,
+lcd_comm.DisplayText(" Hello \n World! ", x=5, y=150,
                      font="roboto/Roboto-Italic.ttf",
-                     font_size=50,
+                     font_size=100,
                      font_color=(0, 0, 255),
                      background_color=(255, 0, 0))
